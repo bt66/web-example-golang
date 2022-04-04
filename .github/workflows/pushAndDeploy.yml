@@ -41,4 +41,4 @@ jobs:
             cd ${{ secrets.vmdirectory }}
             docker-compose down
             docker image rm -f bt66/web-example-golang:latest
-            docker-compose up
+            docker-compose up -d
