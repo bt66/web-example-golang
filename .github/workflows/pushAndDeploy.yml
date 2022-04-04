@@ -28,15 +28,7 @@ jobs:
           push: true
           tags: bt66/web-example-golang:latest
 
-name: remote ssh command
-on:
-  push:
-    branches:
-      - 'Master'
-
-jobs:
-
-  build:
+  deploy:
     name: deploy to vm
     runs-on: ubuntu-latest
     steps:
